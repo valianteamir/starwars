@@ -1,0 +1,28 @@
+.header
+  padding: 90px 0
+  &__row
+    display: flex
+    align-items: center
+  &__logo
+    margin-right: 77px
+.navbar
+  &__link
+    position: relative
+    margin-right: 16px
+    font-weight: 400
+    font-size: 16px
+    color: $white
+    text-decoration: none
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      display: block
+      height: 1px
+      width: 0%
+      background-color: $white
+      transition: width 0.2s ease
+    &:hover, &:focus
+      &::after
+        width: 100%
